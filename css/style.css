@@ -1,6 +1,7 @@
 /****** General ***********/
 * {
     font-family: 'Raleway', sans-serif;
+    margin: 0;
 }
 
 :root {
@@ -17,11 +18,12 @@ header {
   display: flex;
   background-color: white;
   margin-bottom: 2em;
+  
 }
 
 .logo-booki {
   height: 1.5em;
-  padding: 1em;
+  padding: 1.5em 1em 1em 0;
 
 }
 
@@ -29,15 +31,17 @@ header {
   display: flex;
   flex:1;
   justify-content: flex-end;
-  padding-bottom: 1.5em;
-  padding-right: 3em;
   gap: 3.5em;
+  background-color: white;
+  padding-left: 3em;
 }
 
 .buttons-top {
   border: none;
   font-size: 0.95em;
   background-color: white;
+  padding-bottom: 0.75em;
+  padding-top: 0.75em;
 }
 
 .buttons-top:hover {
@@ -46,13 +50,17 @@ header {
   color: #0065FC;
 }
 
+.subtext-top {
+    margin-top: 10px;
+}
+
 /* Search bar */
 .searchbar {
   
   display: flex;
+  margin-top: 35px;
+  margin-bottom: 35px;
   font-weight: bold;
-  margin-bottom: 2em;
-  align-items: center;
 }
 
 .fa-location-dot {
@@ -64,14 +72,12 @@ header {
 }
 
 .sb-middle {
-  border: none;
-  background: white;
-  padding: 1em;
+  padding-left: 1em;
   border: 2px #F2F2F2 solid;
   border-style: solid none solid none;
   font-weight: bold;
   font-size: 16px;
-  
+  color: black;
 }
 
 .sb-right {
@@ -79,6 +85,7 @@ header {
   color: white;
   padding: 1em;
   border-radius: 0em 1.1em 1.1em 0em;
+  cursor: pointer;
 }
 
 /* Filters */
@@ -89,28 +96,19 @@ header {
   gap: 20px;
 }
 
-.filter1 {
+.filter {
   border: 2px lightgray solid;
   padding: 0.75em;
   border-radius: 45px;
+  cursor: pointer;
 }
 
-.filter2 {
-  border: 2px lightgray solid;
-  padding: 0.75em;
-  border-radius: 45px;
+.filter .fa-solid {
+  padding-right: 10px;
 }
 
-.filter3 {
-  border: 2px lightgray solid;
-  padding: 0.75em;
-  border-radius: 45px;
-}
-
-.filter4 {
-  border: 2px lightgray solid;
-  padding: 0.75em;
-  border-radius: 45px;
+.filter:hover {
+  background-color: rgba(0, 101, 252, 0.15);
 }
 
 body {
@@ -133,6 +131,7 @@ a {
 .section-title {
     margin: 0;
     font-size: 22px;
+    margin-bottom: 5px;
 }
 
 .card {
@@ -158,6 +157,21 @@ a {
     color: var(--main-bg-color)
 }
 
+/* Information */
+.div-info {
+    margin: 30px 0px 30px 0px;
+}
+
+.div-info i {
+    margin-right: 10px;
+    color: white;
+    background-color: #0065FC;
+    border: 2px lightgray solid;
+    border-radius: 50px;
+}
+
+
+
 /****** Hebergements And Populaires ***********/
 .hebergements-and-populaires {
     display: flex;
@@ -175,6 +189,43 @@ a {
 .hebergements {
     width: 65%;
 }
+
+.hebergement-cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.hebergement-cards .card {
+    margin-top: 25px;
+}
+
+.hebergement-cards img {
+    border-radius: 20px 20px 0 0;
+    width: 250px;
+    height: 125px;
+}
+
+.hebergement-cards .card-title {
+    margin: 5px 0 5px 0;
+}
+
+.hebergement-cards .card-txt {
+    margin-bottom: 5px;
+    padding-left: 10px;
+}
+
+.hebergement-cards .card-rating {
+    padding-left: 10px;
+}
+
+#hebergement-text {
+    margin-top: 40px;
+}
+
+
+
 
 /****** Populaires ***********/
 .populaires {
@@ -221,31 +272,63 @@ a {
     margin-bottom: 5px;
 }
 
-/* Footer */
+/* Activités */
+.text-activities {
+    margin-top: 60px;
+    margin-left: 40px;
+}
 
+.activities {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.activities section {
+    border-radius: 20px;
+    padding: 30px;
+    width: 1440px;
+}
+
+.activities .card {
+    padding: 0 0 20px 0;
+}
+
+.activities img {
+    border-radius: 25px 25px 0 0;
+    height: 400px;
+    width: 300px;
+}
+
+.activities .card-title {
+    padding: 10px 0 0 20px;
+}
+
+/* Footer */
 footer {
-  background-color: #F2F2F2;
+    background-color: #F2F2F2;
 }
 
 .footer-main {
-  display: flex;
-  margin-top: 2em;
-  padding: 1.5em;
-  gap: 18em;
+    display: flex;
+    margin-top: 2em;
+    padding: 1.5em;
+    gap: 18em;
 }
 
 .footer-sub1, .footer-sub2, .footer-sub3 {
-  font-weight: bold;
+    font-weight: bold;
 }
 
 .footer-button {
-  border: none;
-  display: flex;
-  padding: 0.5em;
-  padding-left: 0em;
-  font-size: 0.9em;
-  cursor: pointer;
-  background-color: #F2F2F2;
+    border: none;
+    display: flex;
+    padding: 0.5em;
+    padding-left: 0em;
+    font-size: 0.9em;
+    cursor: pointer;
+    background-color: #F2F2F2;
 }
 
 
