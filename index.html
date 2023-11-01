@@ -19,8 +19,8 @@
         <header>
             <img src="images/logo/Booki.png" class="logo-booki">
             <div class="button-header">
-                <button class="buttons-top">Hébergements</button>
-                <button class="buttons-top">Activités</button>
+                <button class="buttons-top"><a href="#hebergements">Hébergements</a></button>
+                <button class="buttons-top"><a href="#activites">Activités</a></button>
             </div>
         </header>
         <main>
@@ -28,28 +28,29 @@
             <p class="subtext-top">En plein centre-ville ou en pleine nature</p>
 
             <div class="searchbar">
-                <i class="fa-solid fa-location-dot" style="color: #000000;"></i>
+                <i class="fa-solid fa-location-dot"></i>
                 <input class="sb-middle" type="text" placeholder="Marseille, France">
                 <a class="sb-right">Rechercher</a>
             </div> 
               
             <div class="filters-div">
                 <p>Filtres</p>
-                <p class="filter"><i class="fa-solid fa-money-bill-wave" style="color: #0080ff;"></i>Économique</p>
-                <p class="filter"><i class="fa-solid fa-person" style="color: #0080ff;"></i>Familial</p>
-                <p class="filter"><i class="fa-solid fa-heart" style="color: #0080ff;"></i>Romantique</p>
-                <p class="filter"><i class="fa-solid fa-fire" style="color: #0080ff;"></i>Nos pépites</p>
+                <p class="filter"><i class="fa-solid fa-money-bill-wave"></i>Économique</p>
+                <p class="filter"><i class="fa-solid fa-person"></i>Familial</p>
+                <p class="filter"><i class="fa-solid fa-heart"></i>Romantique</p>
+                <p class="filter"><i class="fa-solid fa-fire"></i>Nos pépites</p>
             </div>
 
             <div class="div-info">
-                <p><i class="fa-solid fa-circle-info"></i>Plus de 500 logements sont disponibles dans cette ville</p>
+                <i class="fa-info fa-solid"></i>
+                <p>Plus de 500 logements sont disponibles dans cette ville</p>
             </div>
 
             <div class="hebergements-and-populaires">
                 <section class="hebergements">
 
                     <div class="populaires-title">
-                        <h2 class="section-title">Hébergements à Marseille</h2>
+                        <h2 class="section-title" id="hebergements">Hébergements à Marseille</h2>
                     </div>
                     <div class="hebergement-cards">
                         <a href="#">
@@ -202,7 +203,7 @@
                                 <img src="./images/hebergements/aw-creative.jpg" alt="Image de la chambre d'hôtel montrant un lit">
                                 <div class="card-content">
                                     <div class="card-txt">
-                                        <h3 class="card-title">Chambres d’hôtes Au cœur de l’eau</h3>
+                                        <h3 class="card-title">Chambres d'hôtes Au cœur de l'eau</h3>
                                         <p class="card-subtitle">Nuit à partir de 71<span class="euro">€</span></p>
                                     </div>
                                     <div class="card-rating">
@@ -240,7 +241,7 @@
             </div>
             
             <div class="activities">
-                <h2 class="text-activities">Activités à Marseille</h2>
+                <h2 class="text-activities" id="activites">Activités à Marseille</h2>
                 <section class="activities">
                     <a href="#">
                         <article class="card">
@@ -290,7 +291,7 @@
 
         <footer>
             <div class="footer-main">
-                <div class="footer-sub1">
+                <div class="footer-sub">
                     À propos
                     <button class="footer-button">
                         Fonctionnement du site
@@ -302,7 +303,7 @@
                         Données et confidentialité
                     </button>
                 </div>
-                <div class="footer-sub2">
+                <div class="footer-sub">
                     Nos hébergements
                     <button class="footer-button">
                         Charte qualité
@@ -311,7 +312,7 @@
                         Proposer votre hôtel
                     </button>
                 </div>
-                <div class="footer-sub3">
+                <div class="footer-sub">
                     Assistance
                     <button class="footer-button">
                         Centre d'aide
