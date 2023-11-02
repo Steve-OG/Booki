@@ -15,39 +15,38 @@
 }
 
 header {
-  display: flex;
-  background-color: white;
-  margin-bottom: 2em;
-  
+    display: flex;
+    background-color: white;
+    margin-bottom: 2em;
 }
 
 .logo-booki {
-  height: 1.5em;
-  padding: 1.5em 1em 1em 0;
+    height: 1.5em;
+    padding: 1.5em 1em 1em 0;
 
 }
 
 .button-header {
-  display: flex;
-  flex:1;
-  justify-content: flex-end;
-  gap: 3.5em;
-  background-color: white;
-  padding-left: 3em;
+    display: flex;
+    flex:1;
+    justify-content: flex-end;
+    gap: 3.5em;
+    background-color: white;
+    padding-left: 3em;
 }
 
 .buttons-top {
-  border: none;
-  font-size: 0.95em;
-  background-color: white;
-  padding-bottom: 0.75em;
-  padding-top: 0.75em;
+    border: none;
+    font-size: 0.95em;
+    background-color: white;
+    padding-bottom: 0.75em;
+    padding-top: 0.75em;
 }
 
 .buttons-top:hover {
-  cursor:pointer;
-  border-top: 2px #0065FC solid;
-  color: #0065FC;
+    cursor:pointer;
+    border-top: 2px #0065FC solid;
+    color: #0065FC;
 }
 
 .subtext-top {
@@ -56,58 +55,57 @@ header {
 
 /* Search bar */
 .searchbar {
-  
-  display: flex;
-  margin-top: 35px;
-  margin-bottom: 35px;
-  font-weight: bold;
+    display: flex;
+    margin-top: 35px;
+    margin-bottom: 35px;
+    font-weight: bold;
 }
 
 .fa-location-dot {
-  background-color: #F2F2F2;
-  padding: 1em;
-  border: 2px #F2F2F2 solid;
-  border-style: solid none solid solid;
-  border-radius: 1.1em 0em 0em 1.1em;
-  color: #000000;
+    background-color: #F2F2F2;
+    padding: 1em;
+    border: 2px #F2F2F2 solid;
+    border-style: solid none solid solid;
+    border-radius: 1.1em 0em 0em 1.1em;
+    color: #000000;
 }
 
 .sb-middle {
-  border: 2px #F2F2F2 solid;
-  border-style: solid none solid none;
-  font-weight: bold;
-  font-size: 16px;
-  width: 160px;
-  padding: 0px 10px 0px 10px;
+    border: 2px #F2F2F2 solid;
+    border-style: solid none solid none;
+    font-weight: bold;
+    font-size: 16px;
+    width: 160px;
+    padding: 0px 10px 0px 10px;
 }
 
 ::placeholder {
-  color: black;
-  opacity: 1;
-  text-align: center;
+    color: black;
+    opacity: 1;
+    text-align: center;
 }
 
 .sb-right {
-  background-color: #0065FC;
-  color: white;
-  padding: 1em;
-  border-radius: 0em 1.1em 1.1em 0em;
-  cursor: pointer;
+    background-color: #0065FC;
+    color: white;
+    padding: 1em;
+    border-radius: 0em 1.1em 1.1em 0em;
+    cursor: pointer;
 }
 
 /* Filters */
 .filters-div {
-  display: flex;
-  align-items: center;
-  font-weight: bold;
-  gap: 20px;
-}
+    display: flex;
+    align-items: center;
+    font-weight: bold;
+    gap: 20px;
+    }
 
 .filter {
-  border: 2px lightgray solid;
-  padding: 0.75em;
-  border-radius: 45px;
-  cursor: pointer;
+    border: 2px lightgray solid;
+    padding: 0.75em;
+    border-radius: 45px;
+    cursor: pointer;
 }
 
 .filter i {
@@ -170,26 +168,26 @@ a {
 
 /* Information */
 .div-info {
-  display: flex;
-  align-items: center;
-  gap: 10px; 
-  margin: 30px 0px 30px 0px; 
+    display: flex;
+    align-items: center;
+    gap: 10px; 
+    margin: 30px 0px 30px 0px; 
 }
 
 .div-info .fa-info {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 24px;
-  height: 24px;
-  border: 1px solid #D9D9D9;
-  border-radius: 24px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 24px;
+    height: 24px;
+    border: 1px solid #D9D9D9;
+    border-radius: 24px;
 }
 
 .div-info p {
-  color: #000;
-  font-size: 16px;
-  font-weight: 400;
+    color: #000;
+    font-size: 16px;
+    font-weight: 400;
 }
 
 
@@ -311,7 +309,7 @@ a {
 .activities section {
     border-radius: 20px;
     padding: 30px;
-    width: 1440px;
+    gap: 25px;
 }
 
 .activities .card {
@@ -394,5 +392,56 @@ footer {
 
 /* Small devices (phones, less than 768px) */
 @media (max-width: 767.98px) {
-    /* ... */
+
+    .main-container {
+        max-width: 767.98px;
+    }
+
+    header {
+        display: block;
+    }
+
+    .logo-div {
+        background-color: lightblue;
+        align-content: center;
+    }
+    .logo-booki {
+    }
+
+    .button-header {
+        width: 100%;
+        margin: 0px;
+        padding: 0px;
+    }
+
+
+    .filters-div {
+        flex-wrap: wrap;
+        row-gap: 10px;
+        column-gap: 20px;
+    }
+
+    .filter-p {
+        width: 100%;
+
+    }
+
+    .populaires {
+        flex-direction: column;
+    }
+
+    .footer-main {
+        flex-direction: column;
+        gap: 2em;
+    }
+
+}
+
+/* Tablets */
+@media (max-width: 768.98px) and (min-width: 767.99px) {
+
+    .filters-div {
+
+    }
+
 }
