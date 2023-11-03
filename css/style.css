@@ -93,6 +93,10 @@ header {
     cursor: pointer;
 }
 
+.fa-search {
+    display: none;
+}
+
 /* Filters */
 .filters-div {
     display: flex;
@@ -137,7 +141,7 @@ a {
     text-decoration: none;
 }
 
-.section-title {
+.populaires-title {
     margin: 0;
     font-size: 22px;
     margin-bottom: 5px;
@@ -402,18 +406,43 @@ footer {
     }
 
     .logo-div {
-        background-color: lightblue;
-        align-content: center;
+        text-align: center;
     }
     .logo-booki {
+        
     }
 
     .button-header {
         width: 100%;
         margin: 0px;
         padding: 0px;
+        gap: 0;
+        background-color: lightblue;
     }
 
+    .buttons-top {
+        width: 100%;
+    }
+
+    .buttons-top:hover {
+        cursor:pointer;
+        border-top: 0;
+        border-bottom: 2px #0065FC solid;
+    }
+
+    .sb-right {
+        display: none;
+    }
+
+    .fa-search {
+        display: inline;
+        background-color: #0065FC;
+        color: white;
+        padding: 1em;
+        border-radius: 1.1em 1.1em 1.1em 1.1em;
+        cursor: pointer;
+        box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.33)
+    }
 
     .filters-div {
         flex-wrap: wrap;
@@ -423,25 +452,39 @@ footer {
 
     .filter-p {
         width: 100%;
+    }
 
+    .hebergements {
+        order: 2;
+        margin-top: 20px;
     }
 
     .populaires {
+        order: 1;
+    }
+    
+    .populaires-cards {
         flex-direction: column;
+    }
+
+    .populaires-cards .card {
+        width: 320%;
+    
+    }
+
+    .hebergement-cards {
+        flex-direction: column;
+    }
+
+    .hebergement-cards .card {
+        display: block;
+        flex: 1;
+        
     }
 
     .footer-main {
         flex-direction: column;
         gap: 2em;
-    }
-
-}
-
-/* Tablets */
-@media (max-width: 768.98px) and (min-width: 767.99px) {
-
-    .filters-div {
-
     }
 
 }
