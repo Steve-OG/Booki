@@ -439,9 +439,6 @@ footer {
     .logo-div {
         text-align: center;
     }
-    .logo-booki {
-        
-    }
 
     .button-header {
         width: 100%;
@@ -453,6 +450,7 @@ footer {
 
     .buttons-top {
         width: 100%;
+        border-bottom: 2px #F2F2F2 solid;
     }
 
     .buttons-top:hover {
@@ -461,8 +459,20 @@ footer {
         border-bottom: 2px #0065FC solid;
     }
 
+    .searchbar {
+    }
+
     .sb-right {
         display: none;
+    }
+
+    .sb-middle {
+        padding-left: 25px;
+        width: 200px;
+    }
+
+    ::placeholder {
+        text-align: left;
     }
 
     .fa-search {
@@ -501,6 +511,10 @@ footer {
         width: 320%;
     }
 
+    .hebergements-and-populaires .hebergements {
+        background-color: white;
+    }
+
     .hebergements {
         order: 2;
         margin-top: 20px;
@@ -514,16 +528,6 @@ footer {
     .hebergement-cards .card {
         width: 100%;
         padding-right: 0px;
-    }
-
-    .hebergement-cards img {
-    }
-    
-    .hebergement-cards .card-txt {
-        
-    }
-
-    .activities section {
     }
 
     .activities .card {
