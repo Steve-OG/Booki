@@ -249,6 +249,7 @@ a {
 #hebergement-text {
     margin-top: 40px;
     cursor: pointer;
+    width: 100%;
 }
 
 
@@ -364,6 +365,11 @@ footer {
 /****** Media queries ***********/
 /* Medium devices (tablets, less/equal than 1024px) */
 @media (max-width: 1024px) {
+
+    h2 {
+        font-size: 26px;
+    }
+
     .hebergements-and-populaires {
         flex-direction: column;
     }
@@ -409,8 +415,11 @@ footer {
         width: 193.5px;
     }
 
-    .activities .card-txt {
-        
+    .footer-main {
+      display: flex;
+      margin-top: 2em;
+      padding: 1.5em;
+      gap: 20%;
     }
 }
 
@@ -436,6 +445,10 @@ footer {
         padding: 0px;
     }
 
+    .top-margin {
+      margin-left: 25px;
+    }
+
     .logo-div {
         text-align: center;
     }
@@ -457,9 +470,6 @@ footer {
         cursor:pointer;
         border-top: 0;
         border-bottom: 2px #0065FC solid;
-    }
-
-    .searchbar {
     }
 
     .sb-right {
@@ -486,7 +496,9 @@ footer {
     }
 
     .filter {
-        width: 35%;
+        margin-top: 10px;
+        width: 125px;
+        font-size: 15px;
     }
 
     .filters-div {
@@ -501,6 +513,10 @@ footer {
 
     .populaires {
         order: 1;
+    }
+
+    .populaires .section-title {
+      align-items: center;
     }
     
     .populaires-cards {
@@ -520,14 +536,40 @@ footer {
         margin-top: 20px;
     }
 
+    .populaires-title .section-title {
+        display: flex;
+        width: 100%;
+        justify-content: center;
+        
+    }
+
     .hebergement-cards {
         flex-direction: column;
         justify-content: left;
     }
 
     .hebergement-cards .card {
-        width: 100%;
+        width: 320px;
+        height: 205px;
         padding-right: 0px;
+    }
+
+    .hebergement-cards img {
+        width: 100%;
+    }
+
+    #hebergement-text {
+        display: flex;
+        width: 100%;
+        justify-content: center;
+    }
+
+    .activities {
+        justify-content: center;
+    }
+
+    .activities .text-activities {
+        padding-right: 50px;
     }
 
     .activities .card {
