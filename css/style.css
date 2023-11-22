@@ -44,7 +44,7 @@ header {
 }
 
 .buttons-top:hover {
-    cursor:pointer;
+    cursor: pointer;
     border-top: 2px #0065FC solid;
     color: #0065FC;
 }
@@ -101,7 +101,6 @@ header {
 .filters-div-tag {
     margin-top: 14px;
     display: inline-flex;
-    /* align-items: center; */
     font-weight: bold;
     gap: 20px;
     }
@@ -232,34 +231,35 @@ a {
     width: 65%;
 }
 
-.hebergement-cards {
+.hebergement-div {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
 }
 
-.hebergement-cards .card {
+.hebergement-div .card {
     width: 30%;
     margin-top: 25px;
+    height: 220px;
 }
 
-.hebergement-cards img {
+.hebergement-div img {
     border-radius: 20px 20px 0 0;
     width: 100%;
     height: 125px;
 }
 
-.hebergement-cards .card-title {
+.hebergement-div .card-title {
     margin: 5px 0 5px 0;
 }
 
-.hebergement-cards .card-txt {
+.hebergement-div .card-txt {
     margin-bottom: 5px;
     padding-left: 10px;
 }
 
-.hebergement-cards .card-rating {
+.hebergement-div .card-rating {
     padding-left: 10px;
 }
 
@@ -339,6 +339,7 @@ a {
 .activities .card {
     padding: 0 0 20px 0;
     width: 23%;
+    height: 420px;
 }
 
 .activities img {
@@ -360,11 +361,12 @@ footer {
     display: flex;
     margin-top: 2em;
     padding: 1.5em;
-    gap: 18em;
+    gap: 17%;
 }
 
 .footer-sub {
     font-weight: bold;
+    width: 21%;
 }
 
 .footer-button {
@@ -386,6 +388,14 @@ footer {
         font-size: 22px;
     }
 
+    .card-title {
+        font-size: 16px;
+    }
+
+    .card-subtitle {
+        font-size: 14px;
+    }
+
     .filter {
         font-size: 14px;
     }
@@ -402,13 +412,13 @@ footer {
         width: 100%;
     }
 
-    .hebergement-cards .card {
+    .hebergement-div .card {
         width: 31%;
         height: 205px;
         padding-right: 0px;
     }
 
-    .hebergement-cards img {
+    .hebergement-div img {
         width: 97.5%;
     }
 
@@ -430,15 +440,7 @@ footer {
     .populaires-cards a {
         width: 31.75%;
     }
-
-    .populaires-cards .card-title {
-        font-size: 14px;
-    }
-
-    .populaires-cards .card-subtitle {
-        font-size: 13px;
-    }
-
+    
     .activities section {
       gap: 0px;
     }
@@ -590,12 +592,12 @@ footer {
         width: 100%;
     }
 
-    .hebergement-cards {
+    .hebergement-div {
         flex-direction: column;
         justify-content: left;
     }
 
-    .hebergement-cards .card {
+    .hebergement-div .card {
         height: 205px;
         padding-right: 5px;
         width: 100%;
@@ -603,7 +605,7 @@ footer {
 
     }
 
-    .hebergement-cards img {
+    .hebergement-div img {
         width: 100%;
     }
 
