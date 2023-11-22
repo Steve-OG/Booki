@@ -361,12 +361,12 @@ footer {
     display: flex;
     margin-top: 2em;
     padding: 1.5em;
-    gap: 17%;
+    gap: 10%;
 }
 
 .footer-sub {
     font-weight: bold;
-    width: 21%;
+    width: 30%;
 }
 
 .footer-button {
@@ -464,6 +464,14 @@ footer {
       margin-top: 2em;
       padding: 1.5em;
       gap: 14.5%;
+    }
+
+    .footer-main {
+        gap: 6%;
+    }
+
+    .footer-sub {
+        width: 40%
     }
 }
 
@@ -637,6 +645,10 @@ footer {
     .footer-main {
         flex-direction: column;
         gap: 2em;
+    }
+
+    .footer-sub {
+        width: 100%;
     }
 
 }
