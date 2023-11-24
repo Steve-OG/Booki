@@ -537,7 +537,9 @@ footer {
 
     .sb-middle {
         padding-left: 25px;
-        width: 200px;
+        width: 80%;
+        max-width: 220px;
+        min-width: 170px;
     }
 
     ::placeholder {
