@@ -336,6 +336,17 @@ a {
     gap: 10px;
 }
 
+.activities-sub {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 20px;
+  padding: 30px;
+  gap: 10px;
+}
+
+
 .activities .card {
     padding: 0 0 20px 0;
     width: 23%;
@@ -441,7 +452,7 @@ footer {
         width: 31.75%;
     }
     
-    .activities section {
+    .activities-sub {
       gap: 0px;
     }
 
@@ -624,7 +635,7 @@ footer {
         width: 100%;
     }
 
-    .activities {
+    .activities-sub {
         justify-content: center;
     }
 
