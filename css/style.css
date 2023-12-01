@@ -381,11 +381,11 @@ footer {
 }
 
 .footer-button {
-    border: none;
     display: flex;
     padding: 0.5em;
     padding-left: 0em;
     font-size: 0.9em;
+    font-weight: normal;
     cursor: pointer;
     background-color: var(--main-bg-color);
 }
