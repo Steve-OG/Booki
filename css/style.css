@@ -8,6 +8,7 @@
     --main-color: #0065FC;
     --main-bg-color: #F2F2F2;
     --filter-bg-color: #DEEBFF;
+    --card-bg-color: #FFFFFF;
 }
 
 .fa-solid {
@@ -16,7 +17,7 @@
 
 header {
     display: flex;
-    background-color: white;
+    background-color: var(--card-bg-color);
     margin-bottom: 2em;
 }
 
@@ -31,22 +32,22 @@ header {
     flex:1;
     justify-content: flex-end;
     gap: 3.5em;
-    background-color: white;
+    background-color: var(--card-bg-color);
     padding-left: 3em;
 }
 
 .buttons-top {
     border: none;
     font-size: 0.95em;
-    background-color: white;
+    background-color: var(--card-bg-color);
     padding-bottom: 0.75em;
     padding-top: 0.75em;
 }
 
 .buttons-top:hover {
     cursor: pointer;
-    border-top: 2px #0065FC solid;
-    color: #0065FC;
+    border-top: 2px var(--main-color) solid;
+    color: var(--main-color);
 }
 
 .subtext-top {
@@ -62,16 +63,16 @@ header {
 }
 
 .fa-location-dot {
-    background-color: #F2F2F2;
+    background-color: var(--main-bg-color);
     padding: 1em;
-    border: 2px #F2F2F2 solid;
+    border: 2px var(--main-bg-color) solid;
     border-style: solid none solid solid;
     border-radius: 1.1em 0em 0em 1.1em;
     color: #000000;
 }
 
 .sb-middle {
-    border: 2px #F2F2F2 solid;
+    border: 2px var(--main-bg-color) solid;
     border-style: solid none solid none;
     font-weight: bold;
     font-size: 16px;
@@ -80,14 +81,13 @@ header {
 }
 
 ::placeholder {
-    color: black;
     opacity: 1;
     text-align: center;
 }
 
 .sb-right {
-    background-color: #0065FC;
-    color: white;
+    background-color: var(--main-color);
+    color: var(--card-bg-color);
     padding: 1em;
     border-radius: 0em 1.1em 1.1em 0em;
     cursor: pointer;
@@ -120,7 +120,7 @@ header {
 
 
 .filter i {
-  color: #0080ff;
+  color: var(--main-color);
 }
 
 .filter .fa-solid {
@@ -157,7 +157,7 @@ a {
 }
 
 .card {
-    background-color: white;
+    background-color: var(--card-bg-color);
     border-radius: 20px;
     padding: 5px;
     filter: drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.1));
@@ -365,7 +365,7 @@ a {
 
 /* Footer */
 footer {
-    background-color: #F2F2F2;
+    background-color: var(--main-bg-color);
 }
 
 .footer-main {
@@ -387,7 +387,7 @@ footer {
     padding-left: 0em;
     font-size: 0.9em;
     cursor: pointer;
-    background-color: #F2F2F2;
+    background-color: var(--main-bg-color);
 }
 
 
@@ -528,7 +528,7 @@ footer {
 
     .buttons-top {
         width: 100%;
-        border-bottom: 2px #F2F2F2 solid;
+        border-bottom: 2px var(--main-bg-color) solid;
     }
 
     .span-top {
@@ -539,7 +539,7 @@ footer {
     .buttons-top:hover {
         cursor:pointer;
         border-top: 0;
-        border-bottom: 2px #0065FC solid;
+        border-bottom: 2px var(--main-color) solid;
     }
 
     .sb-right {
@@ -549,7 +549,7 @@ footer {
     .sb-middle {
         padding-left: 25px;
         width: 80%;
-        max-width: 220px;
+        max-width: 455px;
         min-width: 170px;
     }
 
@@ -559,8 +559,8 @@ footer {
 
     .fa-search {
         display: inline;
-        background-color: #0065FC;
-        color: white;
+        background-color: var(--main-color);
+        color: var(--card-bg-color);
         padding: 1em;
         border-radius: 1.1em 1.1em 1.1em 1.1em;
         cursor: pointer;
@@ -569,8 +569,10 @@ footer {
 
     .filter {
         margin-top: 10px;
-        width: 125px;
+        min-width: 117px;
+        width: 30%;
         font-size: 15px;
+        padding: 0.75em 0.6em 0.75em 0.6em;
     }
 
     .filters-div-tag {
@@ -600,7 +602,7 @@ footer {
     }
 
     .hebergements-and-populaires .hebergements {
-        background-color: white;
+        background-color: var(--card-bg-color);
     }
 
     .hebergements {
@@ -622,7 +624,7 @@ footer {
         height: 205px;
         padding-right: 5px;
         width: 100%;
-        max-width: 385px;
+        max-width: 767px;
 
     }
 
@@ -646,7 +648,7 @@ footer {
     .activities .card {
         height: 205px; 
         width: 100%;
-        max-width: 385px;
+        max-width: 767px;
         margin-bottom: 15px;
     }
     
