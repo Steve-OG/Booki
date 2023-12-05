@@ -83,6 +83,7 @@ header {
 ::placeholder {
     opacity: 1;
     text-align: center;
+    color: black;
 }
 
 .sb-right {
@@ -91,6 +92,7 @@ header {
     padding: 1em;
     border-radius: 0em 1.1em 1.1em 0em;
     cursor: pointer;
+    border: none;
 }
 
 .fa-search {
@@ -112,6 +114,7 @@ header {
 }    
 
 .filter {
+    background-color: var(--card-bg-color);
     border: 2px lightgray solid;
     padding: 0.75em;
     border-radius: 45px;
